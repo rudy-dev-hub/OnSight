@@ -38,6 +38,7 @@ Here’s what happens under the hood when you press the hotkey:
 
 ## 🗂️ Project Structure
 
+```
 OnSight/
 ├── main.py                  # Entry point – starts the hotkey listener thread
 ├── ui/
@@ -52,6 +53,7 @@ OnSight/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
