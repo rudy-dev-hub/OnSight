@@ -39,16 +39,16 @@ Here’s what happens under the hood when you press the hotkey:
 ## 🗂️ Project Structure
 
 OnSight/
-├── main.py              
+├── main.py                  # Entry point – starts the hotkey listener thread
 ├── ui/
-│   └── popup.py         
+│   └── popup.py             # UI logic for asking questions and showing answers
 ├── utils/
-│   ├── hotkey.py         # Background hotkey listener logic
-│   ├── image_utils.py    # Functions to capture and save screenshots
-│   └── ai_utils.py       # Prompt generation and GPT-4 API handling
+│   ├── hotkey.py            # Background hotkey listener logic
+│   ├── image_utils.py       # Functions to capture and save screenshots
+│   └── ai_utils.py          # Prompt generation and GPT-4 API handling
 ├── demo/
-│   └── onsight-demo.mp4  # Screen recording of how OnSight works/ or maybe screenshots
-├── .env                  # Contains your OpenAI API key (excluded from Git)
+│   └── onsight-demo.mp4     # Screen recording of how OnSight works
+├── .env                     # Contains your OpenAI API key (excluded from Git)
 ├── .gitignore
 ├── requirements.txt
 └── README.md
