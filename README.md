@@ -6,9 +6,12 @@
 
 ## 🎥 Demo
 
-https://github.com/your-username/OnSight/blob/main/demo/onsight-demo.mp4
+![OnSight Demo](demo/SS1.png)
+![OnSight Demo](demo/SS2.png)
+![OnSight Demo](demo/onsight-demo.mp4)
 
-> 📁 The video is in the `demo/` folder — feel free to check it out!
+
+> 📁 The video and screenshots are in the `demo/` folder — feel free to check it out!
 
 ---
 
@@ -38,21 +41,38 @@ Here’s what happens under the hood when you press the hotkey:
 
 ## 🗂️ Project Structure
 
+## 📁 Project Structure
+
 ```
 OnSight/
-├── main.py                  # Entry point – starts the hotkey listener thread
+├── main.py                 # Entry point – starts hotkey listener and handles flow
+├── flow.py                 # Orchestrates the screen capture, prompt creation, and response
+│
+├── gpt/
+│   └── ask_gpt.py          # GPT-4 communication and prompt/response handling
+│
+├── hotkey/
+│   └── listener.py         # Listens for the global Ctrl+Shift+A hotkey
+│
+├── ocr/
+│   └── extractor.py        # OCR functionality to extract text from screenshots
+│
+├── tray/
+│   └── tray_app.py         # Adds a tray icon for quick access / background control
+│
 ├── ui/
-│   └── popup.py             # UI logic for asking questions and showing answers
+│   └── popup.py            # UI logic for asking user questions and showing answers
+│
 ├── utils/
-│   ├── hotkey.py            # Background hotkey listener logic
-│   ├── image_utils.py       # Functions to capture and save screenshots
-│   └── ai_utils.py          # Prompt generation and GPT-4 API handling
+│   └── screenshot.py       # Utility to take and save screenshots
+│
 ├── demo/
-│   └── onsight-demo.mp4     # Screen recording of how OnSight works
-├── .env                     # Contains your OpenAI API key (excluded from Git)
-├── .gitignore
-├── requirements.txt
-└── README.md
+│   └── onsight-demo.mp4    # Demo video showcasing OnSight in action
+│
+├── .env                    # API keys and secrets (excluded from Git)
+├── .gitignore              # Files and folders to ignore in version control
+├── requirements.txt        # Python dependencies
+└── README.md               # You're reading it!
 ```
 
 ---
