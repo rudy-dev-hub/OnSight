@@ -8,10 +8,8 @@
 
 ![OnSight Demo](demo/SS1.png)
 ![OnSight Demo](demo/SS2.png)
-![OnSight Demo](demo/onsight-demo.mp4)
 
-
-> 📁 The video and screenshots are in the `demo/` folder — feel free to check it out!
+> 📁 The screenshots are in the `demo/` folder — feel free to check it out!
 
 ---
 
@@ -40,8 +38,6 @@ Here’s what happens under the hood when you press the hotkey:
 ---
 
 ## 🗂️ Project Structure
-
-## 📁 Project Structure
 
 ```
 OnSight/
